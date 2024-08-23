@@ -1,0 +1,111 @@
+
+
+@media screen and (max-width:425px) {
+    .fwrapper {
+        display: flex;
+        flex-basis: auto;
+        flex-direction: column;
+    } 
+    .header {
+        background-color: gold;
+    }
+    
+    .main {
+        background-color: darkorange;
+    }
+    
+    .aside-1 {
+        background-color: mediumseagreen;
+    }
+    
+    .aside-2 {
+        background-color: seagreen;
+    }
+    
+    .footer {
+        background-color: lightgreen;
+    }
+    
+}
+
+@media screen and (min-width:426px) {
+    .wrapper {
+        flex-direction: row;
+    }
+    .aside-1 {
+        flex-basis: auto;
+    }
+    .aside-2 {
+        flex-basis: auto;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .aside-1 {
+        order: 1;
+        flex-basis: 0px;
+    }
+    .main {
+        order: 2;
+        flex-basis: 400px;
+    }
+    .aside-2 {
+        order: 3;
+        flex-basis: 0px;
+    }
+    .footer {
+        order: 4;
+    }
+}
+
+
+body {
+    font-family: Gotham, Arial, Helvetica, sans-serif;
+    background-color: darkcyan;
+    padding: 10px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.wrapper > * {
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.header {
+    background-color: gold;
+}
+
+.main {
+    background-color: darkorange;
+}
+
+.aside-1 {
+    background-color: mediumseagreen;
+}
+
+.aside-2 {
+    background-color: seagreen;
+}
+
+.footer {
+    background-color: lightgreen;
+}
+
+
+/*mobile (max-width = 425px){
+
+}
+
+desktop (min-width 768px){
+
+}
+
+/*<link href="reset.css" rel="stylesheet" type="text/css">
+<link href="desktop.css" rel="stylesheet" type="text/css">
+*/
